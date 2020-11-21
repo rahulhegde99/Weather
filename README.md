@@ -19,3 +19,14 @@ Visit this link to view the app https://ubs-weather-app.herokuapp.com/
 ## How to Run Tests
 - Open command prompt and run test.py
 <pre>python test.py</pre>
+
+## Some test cases
+<pre>
+Enter Valid City: Bengaluru
+Enter Invalid City: Notarealcity
+</pre>
+
+<pre>
+Enter Valid City: Mumbai
+Enter Invalid City: Something
+</pre>
