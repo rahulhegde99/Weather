@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+<div style="background-color: #f3f3f3; height: 100vh;">
+    <div class="container h-100">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-sm-12 col-xs-12 pt-5">
+                <div class="card border-0 p-3 shadow-sm text-center">
+                    <h3 class="text-muted">Current Weather for {{city}}</h3>
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="text-muted" style="margin-top: 5.3%;"><b>{{desc}}</b></div>
+                          </div>
+                          <div class="col-sm-6">
+                            <img src="http://openweathermap.org/img/wn/{{icon}}.png" alt="1">
+                          </div>
+                        </div>
+                      </div>
+                    <h5 class="lead text-muted">Temperature: {{temp}} °C</h5>
+                    <h5 class="lead text-muted">Humidity: {{humidity}}%</h5>
+                    <h5 class="lead text-muted">Wind Speed: {{wind_speed}} km/h</h5>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-sm-12 col-xs-12 pt-5">
+            <center>
+              <button class="btn btn-primary"><a href="{{url_for('index')}}" style="color: white;">Go Back</a></button>  
+            </center>  
+          </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
