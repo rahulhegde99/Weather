@@ -1,4 +1,5 @@
 import unittest
+import requests
 from app import app
 
 # Creating a basic test case
@@ -9,6 +10,15 @@ class BasicTestCase(unittest.TestCase):
 
         # Make sure the app returns the status code 200(OK)
         self.assertEqual(response.status_code, 200)
+
+        # Inputs
+        city = input("Enter Valid City: ")
+        response = requests.get(f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid=c6a81588e32ea63a205bfebb03f37caf')
+        self.assertEqual(response.status_code, 200)
+
+        city = input("Enter Invalid City: ")
+        response = requests.get(f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid=c6a81588e32ea63a205bfebb03f37caf')
+        self.assertEqual(response.status_code, 404)
 
 if __name__ == '__main__':
     unittest.main()
