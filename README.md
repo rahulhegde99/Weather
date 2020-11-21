@@ -3,7 +3,7 @@ Weather app built with Flask and [Open Weather API](http://openweathermap.org/)
 
 Visit this link to view the app https://ubs-weather-app.herokuapp.com/
 
-## How to Run
+## How to Run App
 - Register for an API key in [Open Weather API](http://openweathermap.org/) and replace the following in app.py
 <pre>key="YOUR_API_KEY"</pre>
 
@@ -15,3 +15,7 @@ Visit this link to view the app https://ubs-weather-app.herokuapp.com/
 
 - Open the following in browser to view
 <pre>http://127.0.0.1:5000/</pre>
+
+## How to Run Tests
+- Open command prompt and run test.py
+<pre>python test.py</pre>
