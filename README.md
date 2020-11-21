@@ -16,7 +16,7 @@ Visit this link to view the app https://ubs-weather-app.herokuapp.com/
 - Open the following in browser to view
 <pre>http://127.0.0.1:5000/</pre>
 
-## How to Run Tests
+## How to Run Unit Tests
 - Open command prompt and run test.py
 <pre>python test.py</pre>
 
